@@ -12,7 +12,7 @@ end
 
 
 -- Problem 1
-function guess_number(val)
+function user_guess(val)
    print("First guess: ")
    guess = io.read("*n")
 
@@ -31,4 +31,24 @@ function guess_number(val)
 end
 
 -- test case
-guess_number(10)
+user_guess(10)
+
+
+-- Problem 2
+function comp_guess()
+   guess = 50
+   while input ~= 'C' do
+      print("Guess:", guess)
+      print("Is the guess correct?")
+      input = io.read(1)
+
+      if input == "H" then
+         guess = guess / 2
+      elseif input == "L" then
+         guess = guess + 5
+      end
+   end
+end
+
+-- test case
+comp_guess()
