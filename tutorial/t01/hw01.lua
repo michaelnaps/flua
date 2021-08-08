@@ -52,7 +52,7 @@ function comp_guess()
     count = count + 1
   end
 
-print("Correct! Guesses needed: ", count)
+  print("Correct! Guesses needed: ", count)
 end
 
 -- test case
